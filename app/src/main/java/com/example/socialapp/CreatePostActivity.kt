@@ -21,6 +21,7 @@ class CreatePostActivity : AppCompatActivity() {
 
             if(input.isNotEmpty()) {
                 postDao.addPost(input)
+                finish()
             }
         }
     }
